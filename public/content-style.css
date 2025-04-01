@@ -1,0 +1,7 @@
+.issue-input {
+    border: 2px solid rgb(200, 0, 0) !important;
+    background-color: #ffcccc !important;
+}
+.issue-message {
+    color: rgb(200, 0, 0) !important;
+}

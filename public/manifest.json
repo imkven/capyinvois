@@ -1,0 +1,39 @@
+{
+  "name": "Capyinvois",
+  "description": "Your e-Invois Helper",
+  "version": "0.1.2",
+  "manifest_version": 3,
+  "permissions": ["storage", "sidePanel", "tabs"],
+  "host_permissions": [
+    "https://preprod.myinvois.hasil.gov.my/*",
+    "https://myinvois.hasil.gov.my/*"
+  ],
+  "minimum_chrome_version": "120",
+  "action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    },
+    "default_title": "Capyinvois"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://preprod.myinvois.hasil.gov.my/*",
+        "https://myinvois.hasil.gov.my/*"
+      ],
+      "js": ["content-script.js"],
+      "css": ["content-style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  }
+}

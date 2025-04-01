@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode custom properties */
+:root {
+  --background: #fff8e7; /* Soft beige background from welcome.html */
+  --foreground: #5a3d31; /* Brown text from welcome.html */
+  --card: #fff8e7; /* Matching card color */
+  --card-foreground: #5a3d31; /* Matching card foreground color */
+  --popover: #fff8e7;
+  --popover-foreground: #5a3d31;
+  --primary: #b56ecd; /* Soft purple from welcome.html */
+  --primary-foreground: #f0f0f0;
+  --secondary: #f2d6c1; /* Light beige from welcome.html */
+  --secondary-foreground: #5a3d31;
+  --muted: #d3d3d3; /* Darker muted background */
+  --muted-foreground: #5a3d31; /* Darker text for contrast */
+  --accent: #e6bfa6; /* Darker beige from welcome.html */
+  --accent-foreground: #5a3d31;
+  --destructive: #cc0000; /* Example of a new color, you can adjust as needed */
+  --destructive-foreground: #e9e9e9;
+  --border: #090909;
+  --input: #090909;
+  --ring: #090909;
+  --chart-1: #e76e50;
+  --chart-2: #2a9d90;
+  --chart-3: #274754;
+  --chart-4: #e8c468;
+  --chart-5: #f4a462;
+  --radius: 0.5rem;
+}
+
+/* Dark mode custom properties */
+.dark {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card: #1c1c1e;
+  --card-foreground: #e9e9e9;
+  --popover: #1c1c1e;
+  --popover-foreground: #e9e9e9;
+  --primary: #b56ecd;
+  --primary-foreground: #f0f0f0;
+  --secondary: #3e3e40;
+  --secondary-foreground: #e9e9e9;
+  --muted: #5a5a5a; /* Darker muted background */
+  --muted-foreground: #d3d3d3; /* Darker text for contrast */
+  --accent: #5a3d31;
+  --accent-foreground: #e9e9e9;
+  --destructive: #cc0000;
+  --destructive-foreground: #e9e9e9;
+  --border: #fafafa;
+  --input: #3e3e40;
+  --ring: #fafafa;
+  --chart-1: #e76e50;
+  --chart-2: #2a9d90;
+  --chart-3: #274754;
+  --chart-4: #e8c468;
+  --chart-5: #f4a462;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
