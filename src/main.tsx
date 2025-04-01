@@ -24,30 +24,3 @@ createRoot(document.getElementById("root")!).render(
     </MemoryRouter>
   </StrictMode>
 );
-
-/**
- {
-  "ver": "0.1",
-  "agent": "capyinvois",
-  "data": {
-    "entities": [
-      {
-        "name": "HQ",
-        "data": {
-          "name": "Company XYZ",
-          "tin": "IG24876237000",
-          "type": "NRIC",
-          "id": "aaa",
-          "sst": "sss",
-          "addresses": "aaa",
-          "email": "aa@aa.com",
-          "contactNumber": "+601111111"
-        },
-        "hash": "ABCDXYZ",
-        "hashAlgo": "xxhash"
-      }
-    ]
-  },
-  ...
-}
- */
